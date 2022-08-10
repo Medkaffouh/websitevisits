@@ -1,8 +1,10 @@
 version: '3'
 
 services:
+# use pre-existing image on ducker hub
   redis:
     image: 'redis'
+# create one image localy
   node:
     build: .
     ports:
